@@ -1,0 +1,9 @@
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.deps.json
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.dll
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.pdb
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.csprojAssemblyReference.cache
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.AssemblyInfoInputs.cache
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.AssemblyInfo.cs
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.dll
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp3.1\GroceryDelivery.BusinessLayer.pdb

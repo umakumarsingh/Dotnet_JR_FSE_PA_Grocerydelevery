@@ -1,0 +1,9 @@
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\bin\Debug\netcoreapp3.1\GroceryDelivery.Entites.deps.json
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\bin\Debug\netcoreapp3.1\GroceryDelivery.Entites.dll
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\bin\Debug\netcoreapp3.1\GroceryDelivery.Entites.pdb
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp3.1\GroceryDelivery.Entites.csprojAssemblyReference.cache
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp3.1\GroceryDelivery.Entites.AssemblyInfoInputs.cache
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp3.1\GroceryDelivery.Entites.AssemblyInfo.cs
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp3.1\GroceryDelivery.Entites.csproj.CoreCompileInputs.cache
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp3.1\GroceryDelivery.Entites.dll
+D:\IIHT\Task_6\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp3.1\GroceryDelivery.Entites.pdb
