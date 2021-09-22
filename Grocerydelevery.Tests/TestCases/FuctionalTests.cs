@@ -4,11 +4,10 @@ using GroceryDelivery.BusinessLayer.Services.Repository;
 using GroceryDelivery.Entites;
 using Moq;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Grocerydelevery.Tests.TestCases
 {
@@ -17,15 +16,18 @@ namespace Grocerydelevery.Tests.TestCases
         /// <summary>
         /// Creating Referance Variable of Service Interface and Mocking Repository Interface and class
         /// </summary>
+        private readonly ITestOutputHelper _output;
         private readonly IGroceryServices _GroceryServices;
         public readonly Mock<IGroceryRepository> service = new Mock<IGroceryRepository>();
         private readonly Product _product;
         private readonly Menubar _menubar;
         private readonly ApplicationUser _user;
         private readonly ProductOrder _order;
-        public FuctionalTests()
+        
+        public FuctionalTests(ITestOutputHelper output)
         {
             //Creating New mock Object with value.
+            _output = output;
             _GroceryServices = new GroceryServices(service.Object);
             _product = new Product
             {
@@ -91,15 +93,36 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             bool res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Act
-            service.Setup(repo => repo.PlaceOrder(_product.ProductId, _user)).ReturnsAsync(_user);
-            var result = await _GroceryServices.PlaceOrder(_product.ProductId, _user);
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repo => repo.PlaceOrder(_product.ProductId, _user)).ReturnsAsync(_user);
+                var result = await _GroceryServices.PlaceOrder(_product.ProductId, _user);
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Asert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Validate_ValidPlaceOrder=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
+            //final result save in text file, Call rest API to save test result
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_Validate_ValidPlaceOrder=" + res + "\n");
             return res;
         }
@@ -112,16 +135,37 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             var res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Action
-            service.Setup(repos => repos.GetAllProduct(_product.ProductId));
-            var result = await _GroceryServices.GetAllProduct(_product.ProductId);
-            //Assertion
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repos => repos.GetAllProduct(_product.ProductId));
+                var result = await _GroceryServices.GetAllProduct(_product.ProductId);
+                //Assertion
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Assert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetAllProduct=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
+            //final result save in text file, Call rest API to save test result
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetAllProduct=" + res + "\n");
             return res;
         }
@@ -134,34 +178,80 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             var res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Action
-            service.Setup(repos => repos.GetProductById(_product.ProductId)).ReturnsAsync(_product);
-            var result = await _GroceryServices.GetProductById(_product.ProductId);
-            //Assertion
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repos => repos.GetProductById(_product.ProductId)).ReturnsAsync(_product);
+                var result = await _GroceryServices.GetProductById(_product.ProductId);
+                //Assertion
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Assert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetOneProduct=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
+            //final result save in text file, Call rest API to save test result
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetOneProduct=" + res + "\n");
             return res;
         }
+        /// <summary>
+        /// Get Order by Order Id
+        /// </summary>
+        /// <returns></returns>
         [Fact]
         public async Task<bool> Testfor_OrderByuserId()
         {
             //Arrange
             var res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Action
-            service.Setup(repos => repos.OrderByuserId(_user.UserId));
-            var result = await _GroceryServices.OrderByuserId(_user.UserId);
-            //Assertion
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repos => repos.OrderByuserId(_user.UserId));
+                var result = await _GroceryServices.OrderByuserId(_user.UserId);
+                //Assertion
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Assert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_OrderByuserId=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
+            //final result save in text file, Call rest API to save test result
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_OrderByuserId=" + res + "\n");
             return res;
         }
@@ -174,16 +264,37 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             var res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Action
-            service.Setup(repos => repos.ProductByName(_product.ProductName));
-            var result = await _GroceryServices.ProductByName(_product.ProductName);
-            //Assertion
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repos => repos.ProductByName(_product.ProductName));
+                var result = await _GroceryServices.ProductByName(_product.ProductName);
+                //Assertion
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Assert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetProductByName=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
+            //final result save in text file, Call rest API to save test result
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetProductByName=" + res + "\n");
             return res;
         }
@@ -196,16 +307,36 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             var res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Action
-            service.Setup(repos => repos.MenuList());
-            var result = _GroceryServices.MenuList();
-            //Assertion
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repos => repos.MenuList());
+                var result = await _GroceryServices.MenuList();
+                //Assertion
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Assert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetMenuList=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_GetMenuList=" + res + "\n");
             return res;
         }
@@ -218,16 +349,36 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             var res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Action
-            service.Setup(repos => repos.AddProduct(_product)).ReturnsAsync(_product);
-            var result = _GroceryServices.AddProduct(_product);
-            //Assertion
-            if (result != null)
+            try
             {
-                res = true;
+                service.Setup(repos => repos.AddProduct(_product)).ReturnsAsync(_product);
+                var result = _GroceryServices.AddProduct(_product);
+                //Assertion
+                if (result != null)
+                {
+                    res = true;
+                }
             }
-            //Assert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_AddProduct=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
             await File.AppendAllTextAsync("../../../../output_revised.txt", "Testfor_AddProduct=" + res + "\n");
             return res;
         }

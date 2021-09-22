@@ -12,7 +12,7 @@ namespace GroceryDelivery.DataLayer
         public GroceryDbContext(DbContextOptions<GroceryDbContext> dbContextOptions)
             : base(dbContextOptions)
         {
-            
+            //Database.Migrate();
         }
         /// <summary>
         /// Creating DbSet for Table

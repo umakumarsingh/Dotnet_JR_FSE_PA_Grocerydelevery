@@ -4,12 +4,11 @@ using GroceryDelivery.BusinessLayer.Services.Repository;
 using GroceryDelivery.Entites;
 using Moq;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Grocerydelevery.Tests.TestCases
 {
@@ -18,14 +17,16 @@ namespace Grocerydelevery.Tests.TestCases
         /// <summary>
         /// Creating Referance Variable of Service Interface and Mocking Repository Interface and class
         /// </summary>
+        private readonly ITestOutputHelper _output;
         private readonly IGroceryServices _GroceryServices;
         public readonly Mock<IGroceryRepository> service = new Mock<IGroceryRepository>();
         private readonly Product _product;
         private readonly Menubar _menubar;
         private readonly ApplicationUser _user;
-        public BoundaryTest()
+        public BoundaryTest(ITestOutputHelper output)
         {
             //Creating New mock Object with value.
+            _output = output;
             _GroceryServices = new GroceryServices(service.Object);
             _product = new Product
             {
@@ -85,15 +86,35 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             bool res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Act
-            service.Setup(repo => repo.AddProduct(_product)).ReturnsAsync(_product);
-            var result = await _GroceryServices.AddProduct(_product);
-            if (result.ProductId == _product.ProductId)
+            try
             {
-                res = true;
+                service.Setup(repo => repo.AddProduct(_product)).ReturnsAsync(_product);
+                var result = await _GroceryServices.AddProduct(_product);
+                if (result.ProductId == _product.ProductId)
+                {
+                    res = true;
+                }
             }
-            //Asert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidateProductId=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
             await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidateProductId=" + res + "\n");
             return res;
         }
@@ -106,16 +127,36 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             bool res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Act
-            service.Setup(repo => repo.PlaceOrder(_product.ProductId,_user)).ReturnsAsync(_user);
-            var result = await _GroceryServices.PlaceOrder(_product.ProductId, _user);
-            var actualLength = _user.MobileNumber.ToString().Length;
-            if (result.ToString().Length == actualLength)
+            try
             {
-                res = true;
+                service.Setup(repo => repo.PlaceOrder(_product.ProductId, _user)).ReturnsAsync(_user);
+                var result = await _GroceryServices.PlaceOrder(_product.ProductId, _user);
+                var actualLength = _user.MobileNumber.ToString().Length;
+                if (result.MobileNumber.ToString().Length == actualLength)
+                {
+                    res = true;
+                }
             }
-            //Asert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidateMobileNumber=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
             await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidateMobileNumber=" + res + "\n");
             return res;
         }
@@ -123,17 +164,39 @@ namespace Grocerydelevery.Tests.TestCases
         /// Testfor_ValidEmail used for test the valid Email
         /// </summary>
         [Fact]
-        public async void Testfor_ValidEmail()
+        public async Task<bool> Testfor_ValidEmail()
         {
             //Arrange
             bool res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             //Act
-            bool isEmail = Regex.IsMatch(_user.Email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
-            //Assert
-            Assert.True(isEmail);
-            res = isEmail;
-            //final result displaying in text file
+            try
+            {
+                bool isEmail = Regex.IsMatch(_user.Email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+                //Assert
+                Assert.True(isEmail);
+                res = isEmail;
+            }
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidEmail=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
             await File.AppendAllTextAsync("../../../../output_boundary_revised.txt", "Testfor_ValidEmail=" + res + "\n");
+            return res;
         }
     }
 }

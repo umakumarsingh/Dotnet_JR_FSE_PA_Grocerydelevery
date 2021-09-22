@@ -4,11 +4,10 @@ using GroceryDelivery.BusinessLayer.Services.Repository;
 using GroceryDelivery.Entites;
 using Moq;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Grocerydelevery.Tests.TestCases
 {
@@ -17,14 +16,16 @@ namespace Grocerydelevery.Tests.TestCases
         /// <summary>
         /// Creating Referance Variable of Service Interface and Mocking Repository Interface and class
         /// </summary>
+        private readonly ITestOutputHelper _output;
         private readonly IGroceryServices _GroceryServices;
         public readonly Mock<IGroceryRepository> service = new Mock<IGroceryRepository>();
         private readonly Product _product;
         private readonly Menubar _menubar;
         private readonly ApplicationUser _user;
-        public ExceptionalTest()
+        public ExceptionalTest(ITestOutputHelper output)
         {
             //Creating New mock Object with value.
+            _output = output;
             _GroceryServices = new GroceryServices(service.Object);
             _product = new Product
             {
@@ -84,6 +85,8 @@ namespace Grocerydelevery.Tests.TestCases
         {
             //Arrange
             bool res = false;
+            string testName;
+            testName = TestUtils.GetCurrentMethodName();
             var _userApp = new ApplicationUser()
             {
                 UserId = 2,
@@ -98,14 +101,32 @@ namespace Grocerydelevery.Tests.TestCases
             };
             _userApp = null;
             //Act
-            service.Setup(repo => repo.PlaceOrder(_product.ProductId,_user)).ReturnsAsync(_userApp = null);
-            var result = await _GroceryServices.PlaceOrder(_product.ProductId, _user);
-            if (result == null)
+            try
             {
-                res = true;
+                service.Setup(repo => repo.PlaceOrder(_product.ProductId, _user)).ReturnsAsync(_userApp = null);
+                var result = await _GroceryServices.PlaceOrder(_product.ProductId, _user);
+                if (result == null)
+                {
+                    res = true;
+                }
             }
-            //Asert
-            //final result displaying in text file
+            catch(Exception)
+            {
+                //Assert
+                //final result save in text file if exception raised
+                _output.WriteLine(testName + ":Failed");
+                await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidPlaceOrder=" + res + "\n");
+                return false;
+            }
+            //final result save in text file, Call rest API to save test result
+            if (res == true)
+            {
+                _output.WriteLine(testName + ":Passed");
+            }
+            else
+            {
+                _output.WriteLine(testName + ":Failed");
+            }
             await File.AppendAllTextAsync("../../../../output_exception_revised.txt", "Testfor_Validate_InvlidPlaceOrder=" + res + "\n");
             return res;
         }

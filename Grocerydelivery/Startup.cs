@@ -48,6 +48,7 @@ namespace Grocerydelivery
             //services.AddPaging();
             //To Use InMemory Db
             services.AddDbContext<GroceryDbContext>(options => options.UseInMemoryDatabase(databaseName: "InmemeoryAppConn"));
+            //services.AddDbContext<GroceryDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("InmemeoryAppConn")));
             //Injecting Services and Repository
             services.AddScoped<IGroceryRepository, GroceryRepository>();
             services.AddScoped<IGroceryServices, GroceryServices>();

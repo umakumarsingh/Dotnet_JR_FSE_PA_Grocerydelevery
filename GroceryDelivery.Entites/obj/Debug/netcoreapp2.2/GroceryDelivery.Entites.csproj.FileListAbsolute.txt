@@ -16,3 +16,12 @@ D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debu
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.csproj.CoreCompileInputs.cache
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.dll
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.deps.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.GeneratedMSBuildEditorConfig.editorconfig
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.AssemblyInfoInputs.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.AssemblyInfo.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.csproj.CoreCompileInputs.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.Entites\obj\Debug\netcoreapp2.2\GroceryDelivery.Entites.pdb

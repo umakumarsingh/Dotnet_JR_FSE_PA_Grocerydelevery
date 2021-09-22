@@ -9215,12 +9215,11 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
+      "sha512": "6WVi7gArhxRiC+3qI5V2mFe1gHENj/F7xT5PQiy/lI/RsxXeivrt09WF0huwSQK2ubnmyyRFeA9z3w743/w32A==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -13081,23 +13080,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KUMARUMA\\.nuget\\packages\\": {},
+    "C:\\Users\\Uma Kumar\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\Grocerydelivery\\Grocerydelivery.csproj",
+      "projectUniqueName": "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\Grocerydelivery\\Grocerydelivery.csproj",
       "projectName": "Grocerydelivery",
-      "projectPath": "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\Grocerydelivery\\Grocerydelivery.csproj",
-      "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-      "outputPath": "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\Grocerydelivery\\obj\\",
+      "projectPath": "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\Grocerydelivery\\Grocerydelivery.csproj",
+      "packagesPath": "C:\\Users\\Uma Kumar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\Grocerydelivery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\KUMARUMA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Uma Kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13109,15 +13108,16 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "projectReferences": {
-            "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\GroceryDelivery.BusinessLayer\\GroceryDelivery.BusinessLayer.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\GroceryDelivery.BusinessLayer\\GroceryDelivery.BusinessLayer.csproj"
+            "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\GroceryDelivery.BusinessLayer\\GroceryDelivery.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\GroceryDelivery.BusinessLayer\\GroceryDelivery.BusinessLayer.csproj"
             },
-            "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\GroceryDelivery.DataLayer\\GroceryDelivery.DataLayer.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\GroceryDelivery.DataLayer\\GroceryDelivery.DataLayer.csproj"
+            "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\GroceryDelivery.DataLayer\\GroceryDelivery.DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\GroceryDelivery.DataLayer\\GroceryDelivery.DataLayer.csproj"
             },
-            "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\GroceryDelivery.Entites\\GroceryDelivery.Entites.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean\\JR_FSE_PA_GroceryDelivery\\GroceryDelivery.Entites\\GroceryDelivery.Entites.csproj"
+            "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\GroceryDelivery.Entites\\GroceryDelivery.Entites.csproj": {
+              "projectPath": "C:\\Users\\Uma Kumar\\Desktop\\GroceryDelivery\\GroceryDelivery.Entites\\GroceryDelivery.Entites.csproj"
             }
           }
         }
@@ -13130,6 +13130,7 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
+        "targetAlias": "netcoreapp2.2",
         "dependencies": {
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
@@ -13163,7 +13164,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

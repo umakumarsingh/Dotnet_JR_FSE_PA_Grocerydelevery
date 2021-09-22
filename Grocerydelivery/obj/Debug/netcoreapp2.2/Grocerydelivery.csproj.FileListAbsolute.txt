@@ -86,3 +86,47 @@ D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcor
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.dll
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.pdb
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.genruntimeconfig.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\appsettings.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.deps.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.runtimeconfig.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.runtimeconfig.dev.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.Views.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\Grocerydelivery.Views.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\GroceryDelivery.DataLayer.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\GroceryDelivery.DataLayer.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.csproj.AssemblyReference.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.GeneratedMSBuildEditorConfig.editorconfig
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.AssemblyInfoInputs.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.AssemblyInfo.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.csproj.CoreCompileInputs.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.RazorAssemblyInfo.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.RazorAssemblyInfo.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.TagHelpers.input.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.TagHelpers.output.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.RazorCoreGenerate.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Home\OrderInfo.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Home\Placeorder.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\TopMenu\Default.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.RazorTargetAssemblyInfo.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.RazorTargetAssemblyInfo.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.Views.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.csproj.CopyComplete
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\Grocerydelivery\obj\Debug\netcoreapp2.2\Grocerydelivery.genruntimeconfig.cache

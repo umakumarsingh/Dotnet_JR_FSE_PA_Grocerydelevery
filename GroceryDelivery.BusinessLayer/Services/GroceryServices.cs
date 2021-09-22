@@ -26,7 +26,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// <returns></returns>
         public Task<Product> AddProduct(Product product)
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
         /// <summary>
@@ -36,7 +36,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// <returns></returns>
         public Task<IEnumerable<Product>> GetAllProduct(int? id)
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
         /// <summary>
@@ -46,16 +46,16 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// <returns></returns>
         public async Task<Product> GetProductById(int ProductId)
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
         /// <summary>
         /// get menu list
         /// </summary>
         /// <returns></returns>
-        public IList<Menubar> MenuList()
+        public async Task<IList<Menubar>> MenuList()
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
         /// <summary>
@@ -66,7 +66,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// <returns></returns>
         public async Task<ApplicationUser> PlaceOrder(int ProductId, ApplicationUser user)
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
         /// <summary>
@@ -76,13 +76,13 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// <returns></returns>
         public Task<IEnumerable<Product>> ProductByName(string name)
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
 
         public Task<IEnumerable<ProductOrder>> OrderByuserId(int UserId)
         {
-            //Do code here
+            //do code here
             throw new NotImplementedException();
         }
     }

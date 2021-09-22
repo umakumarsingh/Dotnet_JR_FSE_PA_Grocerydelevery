@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Grocerydelivery.Models;
 using GroceryDelivery.BusinessLayer.Interfaces;
 using GroceryDelivery.Entites;
 using GroceryDelivery.BusinessLayer.ViewModels;
@@ -35,8 +31,8 @@ namespace Grocerydelivery.Controllers
         [HttpGet]
         public async Task< IActionResult> Index(int? id, string search, int page = 1 )
         {
-            //Do code here
-            return View();
+            //do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Show the product Details by product id
@@ -46,8 +42,8 @@ namespace Grocerydelivery.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(int ProductId)
         {
-            //Do code here
-            return View();
+            //do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Place order for new product get method
@@ -67,8 +63,8 @@ namespace Grocerydelivery.Controllers
         [HttpPost]
         public async Task<IActionResult> Placeorder(int ProductId, ApplicationUser user)
         {
-            //Do code here
-            return View();
+            //do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Used for show order info
@@ -77,8 +73,8 @@ namespace Grocerydelivery.Controllers
         [HttpGet]
         public async Task<IActionResult> OrderInfo(int userId)
         {
-            //Do code here
-            return View();
+            //do code here
+            throw new NotImplementedException();
         }
     }
 }

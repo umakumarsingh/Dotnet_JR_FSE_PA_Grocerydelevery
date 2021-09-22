@@ -26,3 +26,18 @@ D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\ob
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.csproj.CopyComplete
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.dll
 D:\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.deps.json
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.DataLayer.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.DataLayer.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\bin\Debug\netcoreapp2.2\GroceryDelivery.Entites.pdb
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.csproj.AssemblyReference.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.AssemblyInfoInputs.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.AssemblyInfo.cs
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.csproj.CoreCompileInputs.cache
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.csproj.CopyComplete
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.dll
+D:\IIHT DATA\IIHT\Task_6\Project-InMemory\GroceryDelivery\GroceryDelivery.BusinessLayer\obj\Debug\netcoreapp2.2\GroceryDelivery.BusinessLayer.pdb

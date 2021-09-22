@@ -22,7 +22,7 @@ namespace Grocerydelivery
             //2. Find the service layer within our scope.
             using (var scope = host.Services.CreateScope())
             {
-                //3. Get the instance of BoardGamesDBContext in our services layer
+                //3. Get the instance of GroceryDBContext in our services layer
                 var services = scope.ServiceProvider;
                 var context = services.GetRequiredService<GroceryDbContext>();
 
