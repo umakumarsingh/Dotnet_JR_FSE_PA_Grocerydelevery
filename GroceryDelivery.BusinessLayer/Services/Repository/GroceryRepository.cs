@@ -69,9 +69,9 @@ namespace GroceryDelivery.BusinessLayer.Services.Repository
         /// Menu List of catogery
         /// </summary>
         /// <returns></returns>
-        public async Task<IList<Menubar>> MenuList()
+        public IList<Menubar> MenuList()
         {
-            var menu = await _groceryContext.Menubars.ToListAsync();
+            var menu = _groceryContext.Menubars.ToList();
             return menu;
         }
         /// <summary>

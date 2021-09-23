@@ -53,7 +53,7 @@ namespace GroceryDelivery.BusinessLayer.Services
         /// get menu list
         /// </summary>
         /// <returns></returns>
-        public async Task<IList<Menubar>> MenuList()
+        public IList<Menubar> MenuList()
         {
             //do code here
             throw new NotImplementedException();

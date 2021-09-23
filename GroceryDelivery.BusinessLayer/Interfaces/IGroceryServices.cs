@@ -14,7 +14,7 @@ namespace GroceryDelivery.BusinessLayer.Interfaces
         Task<IEnumerable<Product>> GetAllProduct(int? id);
         Task<Product> GetProductById(int ProductId);
         Task<IEnumerable<Product>> ProductByName(string name);
-        Task<IList<Menubar>> MenuList();
+        IList<Menubar> MenuList();
         Task<IEnumerable<ProductOrder>> OrderByuserId(int UserId);
     }
 }
